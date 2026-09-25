@@ -11,7 +11,8 @@
                 "c": "display",
                 "d": "show"
             },
-            "resposta": "b"
+            "resposta": "b",
+            "explicacao": "A função print() é utilizada em Python para exibir informações na tela. Ela pode receber múltiplos argumentos e os imprime na saída padrão, geralmente o console."
         },
         {
             "id": 2,
@@ -23,7 +24,8 @@
                 "c": "input",
                 "d": "entrada"
             },
-            "resposta": "c"
+            "resposta": "c",
+            "explicacao": "A função input() é utilizada em Python para solicitar uma entrada do usuário. Ela exibe uma mensagem (opcional) e espera que o usuário digite algo, retornando a entrada como uma string."
         },
         {
             "id": 3,
@@ -35,7 +37,8 @@
                 "c": "nome_variavel contains valor",
                 "d": "nome_variavel = valor"
             },
-            "resposta": "d"
+            "resposta": "d",
+            "explicacao": "Primeiro deve ser colocado o nome da variável, seguido de um sinal de igual e o seu valor, que pode ser uma string, inteiro, lista, dicionário ou até o conteúdo de outra variável."
         },
         {
             "id": 4,
@@ -47,7 +50,8 @@
                 "c": "string",
                 "d": "var"
             },
-            "resposta": "c"
+            "resposta": "c",
+            "explicacao": "O tipo de variável em Python que armazena conteúdo de texto é chamado de 'string', ou 'cadeia de caracteres' em português.."
         },
         {
             "id": 5,
@@ -59,7 +63,8 @@
                 "c": "for",
                 "d": "check"
             },
-            "resposta": "a"
+            "resposta": "a",
+            "explicacao": "O comando 'if' é utilizado em Python para verificar se uma condição é verdadeira. Se a condição for verdadeira, o bloco de código dentro do 'if' será executado. Se não, o Python utiliza as instruções dentro dos comandos elif e else, caso existirem."
         },
         {
             "comentario": "Médias",
@@ -72,7 +77,8 @@
                 "c": "import",
                 "d": "require"
             },
-            "resposta": "c"
+            "resposta": "c",
+            "explicacao": "O comando 'import' é utilizado em Python para importar módulos ou bibliotecas. Ele permite que você utilize funções, classes e variáveis definidas em outros arquivos ou pacotes, facilitando a reutilização de código e a organização do projeto."
         },
         {
             "id": 7,
@@ -84,7 +90,8 @@
                 "c": "for",
                 "d": "range"
             },
-            "resposta": "d"
+            "resposta": "d",
+            "explicacao": "A função 'range()' é utilizada em Python para gerar um conjunto de valores inteiros dentro de um intervalo especificado. Ela pode receber até três argumentos: início, fim e passo, permitindo criar sequências de números de forma eficiente."
         },
         {
             "id": 8,
@@ -96,7 +103,8 @@
                 "c": "enquanto esta condição for verdadeira, faça:",
                 "d": "while condição"
             },
-            "resposta": "d"
+            "resposta": "d",
+            "explicacao": "A sintaxe correta do comando 'while' em Python é 'while condição:'. O bloco de código dentro do 'while' será executado repetidamente enquanto a condição for verdadeira. É importante lembrar de incluir os dois pontos (:) no final da linha para indicar o início do bloco de código."
         },
         {
             "id": 9,
@@ -108,19 +116,21 @@
                 "c": "for (i=0; i<lista_ou_iteravel; i++):",
                 "d": "foreach (variavel in lista_ou_iteravel):"
             },
-            "resposta": "b"
+            "resposta": "b",
+            "explicacao": "A sintaxe correta do comando 'for' em Python é 'for variavel in lista_ou_iteravel:'. O bloco de código dentro do 'for' será executado para cada elemento da lista ou iterável, atribuindo o valor do elemento à variável em cada iteração. É importante lembrar de incluir os dois pontos (:) no final da linha para indicar o início do bloco de código. Os comandos foreach e for (i=0; i<lista_ou_iteravel; i++) são utilizados em outras linguagens de programação, como C, C++ e Java."
         },
         {
             "id": 10,
             "pergunta": "Quais os blocos de comando utilizados para capturar e tratar uma exceção em Python?",
-                "categoria": 2,
+            "categoria": 2,
             "alternativas": {
                 "a": "try / catch",
                 "b": "try / exception",
                 "c": "try / except",
                 "d": "get / catch"
             },
-            "resposta": "c"
+            "resposta": "c",
+            "explicacao": "Os blocos de comando utilizados para capturar e tratar uma exceção em Python são 'try' e 'except'. O bloco 'try' é usado para executar o código que pode gerar uma exceção, e o bloco 'except' é usado para tratar a exceção caso ela ocorra."
         },
         {
             "comentario": "Difíceis",
@@ -133,7 +143,8 @@
                 "c": "range(10, 0, -1):",
                 "d": "for i in range(10, 0, -1):"
             },
-            "resposta": "d"
+            "resposta": "d",
+            "explicacao": "A função 'range()' em Python pode ser utilizada com três parâmetros: início, fim e passo. Para criar uma sequência de números com passo negativo, o passo deve ser um valor negativo. No caso de 'range(10, 0, -1)', a sequência será de 10 até 1, decrementando de 1 em 1. É importante lembrar de incluir o comando for."
         },
         {
             "id": 12,
@@ -145,7 +156,8 @@
                 "c": "class MinhaClasse:",
                 "d": "class MinhaClasse {"
             },
-            "resposta": "c"
+            "resposta": "c",
+            "explicacao": "A sintaxe correta para criar uma classe em Python é 'class NomeDaClasse:'. O bloco de código dentro da classe será executado quando um objeto da classe for criado. É importante lembrar de incluir os dois pontos (:) no final da linha para indicar o início do bloco de código. As opções 'class MinhaClasse extends Object {' e 'public class MinhaClasse {' são utilizadas em outras linguagens de programação, como Java e C++."
         },
         {
             "id": 13,
@@ -157,7 +169,8 @@
                 "c": "tuple",
                 "d": "set"
             },
-            "resposta": "c"
+            "resposta": "c",
+            "explicacao": "Em Python, os tipos de variáveis que não podem ser alterados após a criação são chamados de imutáveis. A tupla (tuple) é um exemplo de tipo imutável, enquanto listas (list), strings (string) e conjuntos (set) são mutáveis."
         },
         {
             "id": 14,
@@ -169,7 +182,8 @@
                 "c": "tho",
                 "d": "Vai retornar erro, pois está faltando o valor após os dois pontos"
             },
-            "resposta": "b"
+            "resposta": "b",
+            "explicacao": "A sintaxe para acessar uma parte de uma string em Python é 'string[início:fim]'. No caso de 'palavra[3:]', estamos acessando a substring da posição 3 até o final da string. Portanto, o resultado será 'hon'. Os dois pontos sem um valor após eles indicam que queremos pegar todos os caracteres a partir da posição 3 até o final da string."
         },
         {
             "id": 15,
@@ -181,7 +195,8 @@
                 "c": "Porque o segundo valor é menor do que o primeiro e o passo padrão do range é 1",
                 "d": "Porque o range não aceita valores maiores que 5"
             },
-            "resposta": "c"
+            "resposta": "c",
+            "explicacao": "A função 'range()' em Python pode ser utilizada com três parâmetros: início, fim e passo. Quando o segundo parâmetro (fim) é menor que o primeiro (início), e o passo é positivo (padrão), a sequência resultante será vazia, o que pode causar um erro se não for tratado corretamente."
         },
         {
             "id": 16,
@@ -193,7 +208,8 @@
                 "c": "Porque estão faltando as aspas no print",
                 "d": "Porque o código tenta usar a função print dentro de um laço for, o que não é permitido em Python"
             },
-            "resposta": "a"
+            "resposta": "a",
+            "explicacao": "O código está imprimindo a lista inteira 'frutas' em vez da variável 'fruta', o que resultará na exibição de todas as frutas da lista. Para imprimir cada fruta individualmente, o print deve ser 'print(fruta)'. A afirmação de que o print não pode ser usado dentro de um laço for é incorreta, pois é perfeitamente válido em Python."
         }
     ]
 }
