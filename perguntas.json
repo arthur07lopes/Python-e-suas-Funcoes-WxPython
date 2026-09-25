@@ -1,0 +1,199 @@
+{
+    "questoes": [
+        {
+            "comentario": "Fáceis",
+            "id": 1,
+            "pergunta": "Em Python, qual é a função utilizada para exibir um texto na tela?",
+            "categoria": 1,
+            "alternativas": {
+                "a": "exibir",
+                "b": "print",
+                "c": "display",
+                "d": "show"
+            },
+            "resposta": "b"
+        },
+        {
+            "id": 2,
+            "pergunta": "Qual a função do Python utilizada para solicitar uma entrada ao usuário?",
+            "categoria": 1,
+            "alternativas": {
+                "a": "entry",
+                "b": "solicitar_entrada",
+                "c": "input",
+                "d": "entrada"
+            },
+            "resposta": "c"
+        },
+        {
+            "id": 3,
+            "pergunta": "Qual o formato correto para criar uma variável em Python?",
+            "categoria": 1,
+            "alternativas": {
+                "a": "nome_variavel: valor",
+                "b": "nome_variavel:=valor",
+                "c": "nome_variavel contains valor",
+                "d": "nome_variavel = valor"
+            },
+            "resposta": "d"
+        },
+        {
+            "id": 4,
+            "pergunta": "Qual é o tipo de variável em Python que armazena conteúdo de texto?",
+            "categoria": 1,
+            "alternativas": {
+                "a": "text",
+                "b": "texto",
+                "c": "string",
+                "d": "var"
+            },
+            "resposta": "c"
+        },
+        {
+            "id": 5,
+            "pergunta": "Qual o comando utilizado para verificar se uma condição é verdadeira em Python?",
+            "categoria": 1,
+            "alternativas": {
+                "a": "if",
+                "b": "condition",
+                "c": "for",
+                "d": "check"
+            },
+            "resposta": "a"
+        },
+        {
+            "comentario": "Médias",
+            "id": 6,
+            "pergunta": "Qual o comando do Python utilizado para importar um módulo ou biblioteca?",
+            "categoria": 2,
+            "alternativas": {
+                "a": "include",
+                "b": "using",
+                "c": "import",
+                "d": "require"
+            },
+            "resposta": "c"
+        },
+        {
+            "id": 7,
+            "pergunta": "Qual a função que permite gerar   um determinado conjunto de valores em Python?",
+            "categoria": 2,
+            "alternativas": {
+                "a": "num_ger",
+                "b": "iterate",
+                "c": "for",
+                "d": "range"
+            },
+            "resposta": "d"
+        },
+        {
+            "id": 8,
+            "pergunta": "Qual a sintaxe correta do comando while em Python?",
+            "categoria": 2,
+            "alternativas": {
+                "a": "while condição do {",
+                "b": "while: condição",
+                "c": "enquanto esta condição for verdadeira, faça:",
+                "d": "while condição"
+            },
+            "resposta": "d"
+        },
+        {
+            "id": 9,
+            "pergunta": "Qual a sintaxe correta do comando for em Python?",
+            "categoria": 2,
+            "alternativas": {
+                "a": "for lista_ou_iteravel in variavel:",
+                "b": "for variavel in lista_ou_iteravel:",
+                "c": "for (i=0; i<lista_ou_iteravel; i++):",
+                "d": "foreach (variavel in lista_ou_iteravel):"
+            },
+            "resposta": "b"
+        },
+        {
+            "id": 10,
+            "pergunta": "Quais os blocos de comando utilizados para capturar e tratar uma exceção em Python?",
+                "categoria": 2,
+            "alternativas": {
+                "a": "try / catch",
+                "b": "try / exception",
+                "c": "try / except",
+                "d": "get / catch"
+            },
+            "resposta": "c"
+        },
+        {
+            "comentario": "Difíceis",
+            "id": 11,
+            "pergunta": "Em Python, qual das formas a seguir executa a função range com passo negativo e itera o resultado?",
+            "categoria": 3,
+            "alternativas": {
+                "a": "for i in range (-1, 10):",
+                "b": "for i in range(-1):",
+                "c": "range(10, 0, -1):",
+                "d": "for i in range(10, 0, -1):"
+            },
+            "resposta": "d"
+        },
+        {
+            "id": 12,
+            "pergunta": "Qual a sintaxe correta para criar uma classe em Python?",
+            "categoria": 3,
+            "alternativas": {
+                "a": "class MinhaClasse extends Object {",
+                "b": "public class MinhaClasse {",
+                "c": "class MinhaClasse:",
+                "d": "class MinhaClasse {"
+            },
+            "resposta": "c"
+        },
+        {
+            "id": 13,
+            "pergunta": "Em Python, qual desses tipos de variável não pode ser alterado após a criação",
+            "categoria": 3,
+            "alternativas": {
+                "a": "list",
+                "b": "string",
+                "c": "tuple",
+                "d": "set"
+            },
+            "resposta": "c"
+        },
+        {
+            "id": 14,
+            "pergunta": "O que retornará este código?\n\npalavra = 'Python'\nprint(palavra[3:]",
+            "categoria": 3,
+            "alternativas": {
+                "a": "Py",
+                "b": "hon",
+                "c": "tho",
+                "d": "Vai retornar erro, pois está faltando o valor após os dois pontos"
+            },
+            "resposta": "b"
+        },
+        {
+            "id": 15,
+            "pergunta": "Por que este código dará erro?\n\nfor i in range(10, 2):\n    print(i)",
+            "categoria": 3,
+            "alternativas": {
+                "a": "Porque o range não aceita dois parâmetros",
+                "b": "Porque o range não aceita valores negativos",
+                "c": "Porque o segundo valor é menor do que o primeiro e o passo padrão do range é 1",
+                "d": "Porque o range não aceita valores maiores que 5"
+            },
+            "resposta": "c"
+        },
+        {
+            "id": 16,
+            "pergunta": "Por que este código não fará o que é pretendido?\n\nfrutas=['maçã', 'banana', 'laranja'\nfor fruta in frutas:\n    print(frutas)",
+            "categoria": 3,
+            "alternativas": {
+                "a": "Porque o print está imprimindo a lista inteira e não a variável fruta",
+                "b": "Porque o print está imprimindo a variável fruta e não a lista inteira",
+                "c": "Porque estão faltando as aspas no print",
+                "d": "Porque o código tenta usar a função print dentro de um laço for, o que não é permitido em Python"
+            },
+            "resposta": "a"
+        }
+    ]
+}
