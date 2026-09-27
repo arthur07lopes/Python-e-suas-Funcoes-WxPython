@@ -3,11 +3,10 @@
 def validar_questao(questao):
     campos_obrigatorios = [
         "id",
-        "dificuldade",
+        "pergunta",
         "categoria",
-        "questao",
         "alternativas",
-        "correta",
+        "resposta",
         "explicacao"
     ]
     
@@ -15,11 +14,11 @@ def validar_questao(questao):
         if campo not in questao:
             return False
         
-    if questao["dificuldade"] not in {"Fácil", "Média", "Difícil"}:
+    if questao["categoria"] not in [1, 2, 3]:
         return False
     if len(questao["alternativas"]) != 4:
         return False
-    if questao["correta"] not in questao["alternativas"]:
+    if questao["resposta"] not in questao["alternativas"]:
         return False
     
     return True
@@ -29,7 +28,7 @@ def validar_id_unico(questoes):
     return len(ids) == len(set(ids))
 
 def validar_texto(questao):
-    if not questao["questao"].strip():
+    if not questao["pergunta"].strip():
         return False
     if not questao["explicacao"].strip():
         return False
