@@ -22,7 +22,7 @@ class TelaInicial(wx.Frame):
         titulo.SetForegroundColour(tema.AZUL_PYTHON)
 
         subtitulo = wx.StaticText(painel, label="Um quiz acessível para aprender funções em Python")
-        subtitulo.SetForegroundColour(tema.CINZA_TEXT)
+        subtitulo.SetForegroundColour(tema.CINZA_TEXTO)
 
         self.botao_iniciar = wx.Button(painel, label="&Iniciar Quiz")
         self.botao_documentacao = wx.Button(painel, label="&Ver documentação sobre o Python")
