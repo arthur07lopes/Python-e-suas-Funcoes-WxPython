@@ -42,7 +42,7 @@ class TelaDocumentacao(wx.Frame):
             size=(640, 560),
         )
         self.tela_anterior = tela_anterior
-        self.SetbackgroundColour(tema.BRANCO)
+        self.SetBackgroundColour(tema.BRANCO)
         self.montar_layout()
         self.Bind(wx.EVT_CLOSE, self.ao_fechar)
         self.Centre()
