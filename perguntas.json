@@ -174,7 +174,7 @@
         },
         {
             "id": 14,
-            "pergunta": "O que retornará este código?\n\npalavra = 'Python'\nprint(palavra[3:]",
+            "pergunta": "O que retornará este código?\n\npalavra = 'Python'\nprint(palavra[3:])",
             "categoria": 3,
             "alternativas": {
                 "a": "Py",
@@ -200,7 +200,7 @@
         },
         {
             "id": 16,
-            "pergunta": "Por que este código não fará o que é pretendido?\n\nfrutas=['maçã', 'banana', 'laranja'\nfor fruta in frutas:\n    print(frutas)",
+            "pergunta": "Por que este código não fará o que é pretendido?\n\nfrutas=['maçã', 'banana', 'laranja']\nfor fruta in frutas:\n    print(frutas)",
             "categoria": 3,
             "alternativas": {
                 "a": "Porque o print está imprimindo a lista inteira e não a variável fruta",
