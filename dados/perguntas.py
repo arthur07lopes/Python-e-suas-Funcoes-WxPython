@@ -2,18 +2,20 @@ import json
 import os
 
 CAMINHO_ARQUIVO = os.path.join(
-    os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "perguntas.json"
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+    "perguntas.json",
 )
 
-def carregar_questoes():
+NUMERO_DA_CATEGORIA = {"facil": 1, "media": 2, "dificil": 3}
+
+def carregar_todas_as_perguntas():
     with open(CAMINHO_ARQUIVO, "r", encoding="utf-8") as arquivo:
         dados = json.load(arquivo)
     return dados["questoes"]
 
-def obter_questoes_por_categoria(categoria):
-    todos = carregar_questoes()
-    return [q for q in todos if q["categoria"] == categoria]
-
-def obter_nome_categoria(categoria):
-    nomes = {1: "Fáceis", 2: "Médias", 3: "Difíceis"}
-    return nomes.get(categoria, "Desconhecida")
+def obter_perguntas_por_categoria(categoria):
+    todas = carregar_todas_as_perguntas()
+    if categoria == "todas":
+        return todas
+    numero = NUMERO_DA_CATEGORIA[categoria]
+    return [questao for questao in todas if questao["categoria"] == numero]
