@@ -7,7 +7,7 @@ import wx
 
 from interface.tela_inicial import TelaInicial
 
-class AplicativoQuiz(wx.app):
+class AplicativoQuiz(wx.App):
   def OnInit(self):
     self.tela_inicial = TelaInicial()
     self.tela_inicial.Show()
