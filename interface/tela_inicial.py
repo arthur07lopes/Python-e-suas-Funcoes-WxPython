@@ -7,8 +7,7 @@ class TelaInicial(wx.Frame):
     def __init__(self):
         super().__init__(parent=None, title="Python e suas Funções - Menu Principal", size=(520, 380))
         self.SetBackgroundColour(tema.BRANCO)
-        tela_documentacao = TelaDocumentacao(self)
-        tela_documentacao._mostrar_layout()
+        self._montar_layout()
         self.Centre()
 
     def _montar_layout(self):

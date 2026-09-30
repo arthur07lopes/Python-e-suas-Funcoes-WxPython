@@ -73,5 +73,5 @@ class TelaDocumentacao(wx.Frame):
         wx.CallAfter(self.caixa_texto.SetFocus)
 
     def ao_clicar_voltar(self, evento):
-        self.tela_anterior.voltar_a_exibir()
+        self.tela_anterior.Show()
         self.Destroy()
