@@ -1,0 +1,12 @@
+import wx
+
+AZUL_PYTHON = wx.Colour(48, 105, 152)
+AMARELO_PYTHON = wx.Colour(255, 212, 59)
+AZUL_ESCURO = wx.Colour(30, 66, 90)
+BRANCO = wx.Colour(255, 255, 255)
+CINZA_TEXTO = wx.Colour(34, 34, 34)
+VERDE_ACERTO = wx.Colour(46, 125, 50)
+VERMELHO_ERRO = wx.Colour(198, 40, 40)
+
+FONTE_TITULO_TAMANHO = 22
+FONTE_TEXTO_TAMANHO = 13
