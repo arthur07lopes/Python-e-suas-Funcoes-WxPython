@@ -14,9 +14,9 @@ class AplicativoQuiz(wx.App):
     self.SetTopWindow(self.tela_inicial)
     return True
 
-  def principal():
-    app = AplicativoQuiz()
-    app.MainLoop()
+def principal():
+  app = AplicativoQuiz()
+  app.MainLoop()
 
 if __name__ == "__main__":
   principal()
