@@ -5,7 +5,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import wx
 
-from interface.teça_inicial import TelaInicial
+from interface.tela_inicial import TelaInicial
 
 class AplicativoQuiz(wx.app):
   def OnInit(self):
