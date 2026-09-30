@@ -22,7 +22,7 @@ class TelaCategorias(wx.Frame):
 
         self.opcao_facil = wx.RadioButton(caixa, label="Fácil (5 perguntas)", style=wx.RB_GROUP)
         self.opcao_media = wx.RadioButton(caixa, label="Média (5 perguntas)")
-        self.opcao_dificil wx.RadioButton(caixa, label="Difícil (6 perguntas)")
+        self.opcao_dificil = wx.RadioButton(caixa, label="Difícil (6 perguntas)")
         self.opcao_todas = wx.RadioButton(caixa, label="Todas as categorias (16 perguntas)")
         self.opcao_facil.SetValue(True)
 
