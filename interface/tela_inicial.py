@@ -44,6 +44,7 @@ class TelaInicial(wx.Frame):
     def ao_clicar_iniciar(self, evento):
         from interface.tela_categorias import TelaCategorias
 
+        tela_categorias = TelaCategorias()
         TelaCategorias.Show()
         self.Close()
 
