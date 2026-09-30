@@ -9,9 +9,9 @@ o que a torna uma das melhores linguagens para quem está começando a programar
 
 Onde o Python é aplicado?
 
-Ciência de dados e inteligencia artificial, desenvolvimento 
+Ciência de dados e inteligência artificial, desenvolvimento 
 web, automação de tarefas do dia a dia e também programas
-com interface gráfica, como este prórpio quiz.
+com interface gráfica, como este próprio quiz.
 
 O que são Funções?
 
@@ -31,7 +31,7 @@ pronta no Python.
 Como Funciona o Quiz?
 
 São 16 perguntas: 5 fáceis, 5 médias e 6 difíceis. Cada pergunta tem 4 alternativas e você tem 3 tentativas. Acertar
-de primeira vale a pontuacao inteira, acertar na segunda vale por 60 por cento e na terceira, 30 por cento. Se
+de primeira vale a pontuação inteira, acertar na segunda vale por 60 por cento e na terceira, 30 por cento. Se
 as 3 tentativas acabarem, uma janela mostra a resposta correta e o motivo."""
 
 class TelaDocumentacao(wx.Frame):
