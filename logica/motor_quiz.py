@@ -1,4 +1,4 @@
-from dados.perguntas import obter_perguntas_por_categoria(categoria)
+from dados.perguntas import obter_perguntas_por_categoria
 from logica.pontuacao import Pontuacao
 
 MAXIMO_DE_TENTATIVAS = 3

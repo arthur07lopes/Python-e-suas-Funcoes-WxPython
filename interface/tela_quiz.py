@@ -1,7 +1,7 @@
 import wx
 
 from interface import tema
-from logica.motor_quiz impotr MotorQuiz
+from logica.motor_quiz import MotorQuiz
 
 LETRAS = ["a", "b", "d"]
 NOME_DA_CATEGORIA = {1: "fácil", 2: "média", 3: "difícil"}
@@ -68,9 +68,9 @@ class TelaQuiz(wx.Frame):
         if mensagem:
             partes.append(mensagem)
         partes.append(
-            f"Pergunta {numero} de {total}, dificuldade {categoria}.",
-            f"Tentativa {tentativa} de 3."
+            f"Pergunta {numero} de {total}, dificuldade {categoria}."
         )
+        partes.append(f"Tentativa {tentativa} de 3.")
         partes.append(pergunta["pergunta"])
         return "\n\n".join(partes)
 
@@ -81,7 +81,7 @@ class TelaQuiz(wx.Frame):
         self.caixa_pergunta.SetValue(self._texto_da_pergunta())
 
         for letra, radio in zip(LETRAS, self.opcoes_radio):
-            texto = f"{letra}") {pergunta['alternativas'][letra]}"
+            texto = f"{letra} {pergunta['alternativas'][letra]}"
             radio.SetLabel(texto.replace("&", "&&"))
             radio.SetValue(False)
             radio.Enable()

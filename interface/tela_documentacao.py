@@ -43,8 +43,7 @@ class TelaDocumentacao(wx.Frame):
         )
         self.tela_anterior = tela_anterior
         self.SetBackgroundColour(tema.BRANCO)
-        self.montar_layout()
-        self.Bind(wx.EVT_CLOSE, self.ao_fechar)
+        self.mostrar_layout()
         self.Centre()
 
     def mostrar_layout(self):
@@ -55,7 +54,7 @@ class TelaDocumentacao(wx.Frame):
         rotulo = wx.StaticText(painel, label="Sobre o Python")
         rotulo.SetForegroundColour(tema.AZUL_PYTHON)
 
-        self.caixa_texto = wx.TextCtril(
+        self.caixa_texto = wx.TextCtrl(
             painel,
             value=TEXTO_DOCUMENTACAO,
             style=wx.TE_MULTILINE | wx.TE_READONLY,

@@ -1,6 +1,7 @@
 import wx
 
 from interface import tema
+from .tela_documentacao import TelaDocumentacao
 
 class TelaInicial(wx.Frame):
     def __init__(self):
@@ -44,7 +45,8 @@ class TelaInicial(wx.Frame):
     def ao_clicar_iniciar(self, evento):
         from interface.tela_categorias import TelaCategorias
 
-        TelaCategorias.Show()
+        tela_categorias = TelaCategorias()
+        tela_categorias.Show()
         self.Close()
 
     def ao_clicar_documentacao(self, evento):
@@ -54,6 +56,4 @@ class TelaInicial(wx.Frame):
         self.Hide()
 
     def ao_clicar_sair(self, evento):
-        self.Show()
-        self.Raise()
-        wx.CallAfter(self.botao_documentacao.SetFocus)
+        self.Close()
