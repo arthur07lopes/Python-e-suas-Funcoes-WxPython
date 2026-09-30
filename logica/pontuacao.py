@@ -1,10 +1,10 @@
 PONTOS_POR_CATEGORIA = {1: 10, 2: 20, 3: 30}
 FRACAO_POR_TENTATIVA = {1: 1.0, 2: 0.6, 3: 0.3}
 
-def calcular_pontos(categiria, tentativa_do_acerto):
+def calcular_pontos(categoria, tentativa_do_acerto):
     if tentativa_do_acerto is None:
         return 0
-    return round(PONTOS_POR_CATEGORIA["categoria"] * FRACAO_POR_TENTATIVA[tentativa_do_acerto])
+    return round(PONTOS_POR_CATEGORIA[categoria] * FRACAO_POR_TENTATIVA[tentativa_do_acerto])
 
 
 class Pontuacao:
