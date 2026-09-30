@@ -1,6 +1,7 @@
 import wx
 
 from interface import tema
+from tela_documentacao import TelaDocumentacao
 
 class TelaInicial(wx.Frame):
     def __init__(self):
