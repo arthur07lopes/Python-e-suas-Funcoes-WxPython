@@ -1,28 +1,57 @@
 import wx
 
-from interface.tema import aplicar_tema_janela
+from interface import tema
+
 
 class DialogoRevisao(wx.Dialog):
-    def __init__(self, parent, erros):
-        super().__init__(parent, title="Revisão de erros", size=(500, 400))
-        aplicar_tema_janela(self)
-        organizador = wx.BoxSizer(wx.VERTICAL)
-
-        texto = ""
-        for item in erros:
-            texto += f"Pergunta: {item['questao']}\n"
-            texto += f"Sua resposta: {item['resposta_usuario']}\n"
-            texto += f"Resposta correta: {item['correta']}\n"
-
-        if texto == "":
-            texto = "Você não errou nenhuma questão. Parabéns! :D"
-
-        caixa_texto = wxTextCtrl(
-            self, value=texto, style=wx.TE_MULTILINE | wx.TE_READONLY
+    def __init__(self, pai, pergunta, respostas_erradas_dadas):
+        super().__init__(
+            pai,
+            title="Tentativas esgotadas — revisão da resposta",
+            size=(660, 500),
         )
-        organizador.Add(caixa_texto, 1, wx.ALL | wx.EXPAND, 15)
+        self.SetBackgroundColour(tema.BRANCO)
+        self._montar_layout(pergunta, respostas_erradas_dadas)
+        self.SetAffirmativeId(wx.ID_OK)
+        self.SetEscapeId(wx.ID_OK)
+        self.Centre()
 
-        botao_fechar = wx.Button(self, label="&Fechar", id=wx.ID_OK)
-        organizador.Add(botao_fechar, 0, wx.ALL | wx.CENTER, 10)
+    def _montar_texto(self, pergunta, respostas_erradas_dadas):
+        letra_certa = pergunta["resposta"]
+        resposta_certa = f"{letra_certa}) {pergunta['alternativas'][letra_certa]}"
+        erradas = list(dict.fromkeys(respostas_erradas_dadas))
 
-        self.SetSizer(organizador)
+        linhas = [
+            "Você usou as 3 tentativas e não acertou esta pergunta.",
+            f"Pergunta:\n{pergunta['pergunta']}",
+            f"Resposta correta: {resposta_certa}",
+            "Alternativas que você marcou e estavam erradas: " + "; ".join(erradas),
+            f"Explicação: {pergunta['explicacao']}",
+        ]
+        return "\n\n".join(linhas)
+
+    def _montar_layout(self, pergunta, respostas_erradas_dadas):
+        painel = wx.Panel(self)
+        painel.SetBackgroundColour(tema.BRANCO)
+        layout = wx.BoxSizer(wx.VERTICAL)
+
+        rotulo = wx.StaticText(painel, label="Revisão da pergunta")
+        rotulo.SetForegroundColour(tema.AZUL_PYTHON)
+
+        self.caixa_revisao = wx.TextCtrl(
+            painel,
+            value=self._montar_texto(pergunta, respostas_erradas_dadas),
+            style=wx.TE_MULTILINE | wx.TE_READONLY,
+            size=(600, 340),
+        )
+        self.caixa_revisao.SetName("Revisão da pergunta")
+
+        botao_continuar = wx.Button(painel, id=wx.ID_OK, label="&Continuar")
+        botao_continuar.SetDefault()
+
+        layout.Add(rotulo, flag=wx.ALL, border=12)
+        layout.Add(self.caixa_revisao, proportion=1, flag=wx.EXPAND | wx.LEFT | wx.RIGHT, border=12)
+        layout.Add(botao_continuar, flag=wx.ALIGN_CENTER | wx.ALL, border=12)
+
+        painel.SetSizer(layout)
+        wx.CallAfter(self.caixa_revisao.SetFocus)
