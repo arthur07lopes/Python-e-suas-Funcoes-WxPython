@@ -3,7 +3,7 @@ import wx
 from interface import tema
 from logica.motor_quiz import MotorQuiz
 
-LETRAS = ["a", "b", "d"]
+LETRAS = ["a", "b", "c", "d"]
 NOME_DA_CATEGORIA = {1: "fácil", 2: "média", 3: "difícil"}
 
 class TelaQuiz(wx.Frame):
